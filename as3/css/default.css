@@ -94,7 +94,7 @@ footer.footer .right{
 #header nav {
 	background-color: #70ab42;
 	color: white;
-	width: 340px;
+	width: 100%;
 	float: right;
 	height: 30px;
 	position: relative;
@@ -108,7 +108,6 @@ footer.footer .right{
 	top: 3px;
 	font-size: 13pt;
 	padding: 0 10px 0 10px;
-	border-right: 1px solid white;
 	text-align: center;
 	vertical-align: middle;
 
@@ -120,11 +119,35 @@ footer.footer .right{
 
 .navTriangle {
     float: left;
+	position: relative;
+	left: 10%;
     width: 0; 
     height: 0;
-    border-left: 20px solid #1284c8;
+    border-left: 30px solid #1284c8;
     border-top: 15px solid transparent; 
     border-bottom: 15px solid transparent;	
+}
+
+.navTriangle2 {
+    float: left;
+	position: relative;
+	left: 10%;
+    width: 0; 
+    height: 0;
+    border-left: 30px solid #70ab42;
+    border-top: 15px solid #1284c8; 
+    border-bottom: 15px solid #1284c8;	
+}
+
+.navTriangle3 {
+    float: left;
+	position: relative;
+	left: 10%;
+    width: 0; 
+    height: 0;
+    border-left: 1px solid #1284c8;
+    border-top: 15px solid #1284c8; 
+    border-bottom: 15px solid #1284c8;	
 }
 
 #whatwedo {
@@ -194,14 +217,11 @@ footer.footer .right{
 #contact article {
 	color: white;
 	float: left;
-	margin: 0 auto 0 110px;
-	width: 200px;
+	padding-left: 15%;
+	padding-bottom: 50px;
 }
 
 #contact article.middle {
-	padding-left: 20px;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
 }
 
 
@@ -254,3 +274,29 @@ img.header {
     border-right: 40px solid transparent;
 }
 
+
+/* bxslider style overrides */
+.bxslider li {
+	font-size: 30pt;
+	height: 90px;
+	font-weight: bold;
+}
+
+.bx-wrapper .bx-viewport {
+	-moz-box-shadow: 0 0 0px #ccc;
+	-webkit-box-shadow: 0 0 0px #ccc;
+	box-shadow: 0 0 0px #ccc;
+	border: solid #666 0px;
+	left: 0px;
+	background: #1284c8;
+	color: white;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: white;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #70ab42;
+}
