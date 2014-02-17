@@ -35,6 +35,12 @@ body {
 	}
 }
 
+@media only screen and (max-width: 359px) {
+	body {
+		width: 100%;
+	}
+}
+
 /**
  * Button
  *
