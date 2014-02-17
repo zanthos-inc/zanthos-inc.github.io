@@ -35,7 +35,8 @@ body {
 	}
 }
 
-@media only screen and (max-width: 359px) {
+/*Mobile (Iphone 5 specific numbers) */
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
 	body {
 		width: 100%;
 	}
@@ -183,7 +184,7 @@ nav a:hover {
     border-bottom: 15px solid #1284c8;	
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
 	nav {
 		background-color: #70ab42;
 		color: white;
