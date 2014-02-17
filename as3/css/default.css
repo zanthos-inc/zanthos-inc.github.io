@@ -1,8 +1,45 @@
+
+/**
+ * Main Page styling
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 @font-face {
 	font-family: OPENSANS-CONDLIGHT;
 	src: url('../Font/OPENSANS-CONDLIGHT.TTF');
 }
 
+.clear {
+	clear: both;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+html {
+	background-color: #EBEBEB;
+	font-family: OPENSANS-CONDLIGHT;
+}
+
+body {
+	width: 75%;
+	vertical-align: middle;
+	margin: auto;
+}
+
+@media only screen and (max-width: 643px) {
+	body {
+		width: 100%;
+	}
+}
+
+/**
+ * Button
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 button[type=button].small {
 	color: white;
 	background-color: #ABABAD;
@@ -34,26 +71,12 @@ button[type=button].large:hover {
 	cursor: pointer;
 }
 
-.clear {
-	clear: both;
-}
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-html {
-	background-color: #EBEBEB;
-	font-family: OPENSANS-CONDLIGHT;
-}
-
-body {
-	width: 75%;
-	vertical-align: middle;
-	margin: auto;
-}
-
+/**
+ * Footer
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 footer.footer {
 	height: 60px;
 	background-color: #575757;
@@ -86,12 +109,17 @@ footer.footer .right{
 	vertical-align: middle;
 }
 
+/**
+ * Navigation
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 #header {
 	background-color: #1284c8;
 
 }
 
-#header nav {
+nav {
 	background-color: #70ab42;
 	color: white;
 	width: 100%;
@@ -99,10 +127,19 @@ footer.footer .right{
 	height: 30px;
 	position: relative;
 	top: 20px;
-	
+
 }
 
-#header nav a{
+nav ul {
+	position: relative;
+	top: -8px;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav a{
 	float: right;
 	position: relative;
 	top: 3px;
@@ -113,9 +150,10 @@ footer.footer .right{
 
 }
 
-#header nav a:hover {
+nav a:hover {
 	background-color: #53892B;
 }
+
 
 .navTriangle {
     float: left;
@@ -139,17 +177,92 @@ footer.footer .right{
     border-bottom: 15px solid #1284c8;	
 }
 
-.navTriangle3 {
-    float: left;
-	position: relative;
-	left: 10%;
-    width: 0; 
-    height: 0;
-    border-left: 1px solid #1284c8;
-    border-top: 15px solid #1284c8; 
-    border-bottom: 15px solid #1284c8;	
+@media only screen and (max-width: 643px) {
+	nav {
+		background-color: #70ab42;
+		color: white;
+		width: 100%;
+		float: right;
+		height: 75px;
+		position: relative;
+		top: 20px;
+
+	}
+	
+	nav ul {
+		position: relative;
+		left: -20px;
+		font-size: 30pt;
+		top: 20px;
+	}
+	
+	nav ul li {
+		list-style-type: none;
+	}
+	
+	nav ul li a {
+		display: inline-block;
+		float: none;
+		position: relative;
+		top: 0px;
+		font-size: 30pt;
+		padding: 0;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	nav ul li ul {
+		display:none;	
+		position: absolute;	
+		width: 100%;
+		z-index: 100;
+		text-align: center;
+	}
+	
+	nav ul li ul li {
+		border: 1px solid white;
+		background-color: #70ab42;
+		z-index: 100;
+		width: 100%;
+	}
+	
+	nav ul li ul li:hover {
+		background-color: #53892B;
+	}
+	
+	nav:hover ul {
+		display:block;
+	}
+	
+		
+	.navTriangle {
+	    float: left;
+		position: relative;
+		left: 10%;
+	    width: 0; 
+	    height: 0;
+	    border-left: 38px solid #1284c8;
+	    border-top: 38px solid transparent; 
+	    border-bottom: 38px solid transparent;	
+	}
+
+	.navTriangle2 {
+	    float: left;
+		position: relative;
+		left: 10%;
+	    width: 0; 
+	    height: 0;
+	    border-left: 38px solid #70ab42;
+	    border-top: 38px solid #1284c8; 
+	    border-bottom: 38px solid #1284c8;	
+	}
 }
 
+/**
+ * Content
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 #whatwedo {
 	background-color: white;
 	text-aligh:center;
@@ -274,8 +387,18 @@ img.header {
     border-right: 40px solid transparent;
 }
 
+/** 
+ * media queries 
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 
-/* bxslider style overrides */
+
+/** 
+ * bxslider style overrides 
+ *
+ * 
+ * ----------------------------------------------------------------------------*/
 .bxslider li {
 	font-size: 30pt;
 	height: 90px;
