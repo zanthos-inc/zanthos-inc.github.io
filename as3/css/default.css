@@ -220,7 +220,7 @@ nav a:hover {
 		display:block;
 		float:right;
 		position: relative;
-		top: -50px;
+		top: -75px;
 	}
 	
 	nav .ddIcon:hover {
@@ -230,8 +230,8 @@ nav a:hover {
 	nav ul {
 		position: relative;
 		left: -20px;
-		font-size: 30pt;
-		top: 20px;
+		font-size: 70pt;
+		top: -6px;
 	}
 	
 	nav ul li {
@@ -242,7 +242,7 @@ nav a:hover {
 		display: inline-block;
 		float: none;
 		position: relative;
-		top: 0px;
+		top: -10px;
 		font-size: 30pt;
 		padding: 0;
 		text-align: center;
