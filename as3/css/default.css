@@ -24,7 +24,7 @@ html {
 }
 
 body {
-	width: 75%;
+	width: 85%;
 	vertical-align: middle;
 	margin: auto;
 }
@@ -134,7 +134,17 @@ nav {
 	height: 30px;
 	position: relative;
 	top: 20px;
+}
 
+nav .ddIcon {
+	display:none;
+}
+
+nav div.dropdown {
+	width:20px;
+	height: 20px;
+	border: 3px solid black;
+	background-image: url('../images/dropdown.png');
 }
 
 nav ul {
@@ -194,6 +204,17 @@ nav a:hover {
 		position: relative;
 		top: 20px;
 
+	}
+	
+	nav .ddIcon {
+		display:block;
+		float:right;
+		position: relative;
+		top: -50px;
+	}
+	
+	nav .ddIcon:hover {
+		background-color: #53892B;
 	}
 	
 	nav ul {
@@ -276,6 +297,17 @@ nav a:hover {
 
 	}
 	
+	nav .ddIcon {
+		display:block;
+		float:right;
+		position: relative;
+		top: -50px;
+	}
+	
+	nav .ddIcon:hover {
+		background-color: #53892B;
+	}
+	
 	nav ul {
 		position: relative;
 		left: -20px;
@@ -350,6 +382,12 @@ nav a:hover {
  *
  * 
  * ----------------------------------------------------------------------------*/
+
+
+/** 
+     What We Do Section
+*
+*------------------------*/
 #whatwedo {
 	background-color: white;
 	text-aligh:center;
@@ -376,6 +414,51 @@ nav a:hover {
 	width: 266px;
 }
 
+@media only screen and (max-width: 643px) {
+	#whatwedo header {
+		color: #70ab42;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 5px;
+		border-bottom: 3px solid #EBEBEB;
+	}
+	
+	#whatwedo article {
+		float: left;
+		margin-left: 5%;
+		padding-top:20px;
+		width: 266px;
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	#whatwedo header {
+		color: #70ab42;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 5px;
+		border-bottom: 3px solid #EBEBEB;
+	}
+	
+	#whatwedo article {
+		float: left;
+		margin-left: 5%;
+		padding-top:20px;
+		width: 266px;
+		font-size: 30px;
+	}
+}
+
+
+/** 
+     Who we are Section
+*
+*------------------------*/
 #whoweare {
 	background-color: #F6F6F6;
 }
@@ -396,6 +479,48 @@ nav a:hover {
 	padding: 0 5% 0 5%;
 	color:#BABABA;
 }
+
+@media only screen and (max-width: 643px) {
+
+	#whoweare header {
+		color: #1284c8;
+		padding-top: 40px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 5px;
+
+	}
+	
+	#whoweare .body {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	#whoweare header {
+		color: #1284c8;
+		padding-top: 40px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-bottom: 5px;
+
+	}
+	
+	#whoweare .body {
+		font-size: 30px;
+	}
+}
+
+/** 
+     Contact Section
+*
+*------------------------*/
 
 #contact {
 	background-color: #70ab42;
@@ -423,6 +548,54 @@ nav a:hover {
 
 #contact article.middle {
 }
+
+@media only screen and (max-width: 643px) {
+	#contact header {
+		color: white;
+		padding-top: 30px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 38px;
+		margin-right: 38px;
+
+
+	}
+	
+	#contact article {
+		color: white;
+		float: left;
+		padding-left: 15%;
+		padding-bottom: 50px;
+		font-size: 30px;
+	}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	#contact header {
+		color: white;
+		padding-top: 30px;
+		text-align: center;
+		font-weight: bold;
+		font-size: 40px;
+		margin-left: 38px;
+		margin-right: 38px;
+
+
+	}
+	
+	#contact article {
+		color: white;
+		float: left;
+		padding-left: 15%;
+		padding-bottom: 50px;
+		font-size: 30px;
+	}
+}
+/** 
+     Map Section
+*
+*------------------------*/
 
 
 #map {
@@ -509,4 +682,20 @@ img.header {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
 	background: #70ab42;
+}
+
+@media only screen and (max-width: 643px) {
+	.bxslider li {
+		font-size: 40pt;
+		height: 90px;
+		font-weight: bold;
+	}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	.bxslider li {
+		font-size: 40pt;
+		height: 90px;
+		font-weight: bold;
+	}
 }
