@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>zanthos Inc.</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+    <link href="bxslider/jquery.bxslider.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
+    <script language="javascript" type="text/javascript">
+        function linkClick(linkTo) {
+            switch (linkTo) {
+                case "facebook":
+                    window.open("http://www.facebook.com")
+                    break;
+                case "twitter":
+                    window.open("http://twitter.com/zanthosinc")
+                    break;
+                case "github":
+                    window.open("http://www.github.com")
+                    break;
+                case "top":
+                    window.location = window.location.host + "#top"
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            auto: true,
+            mode: 'horizontal',
+            autocontrols: true,
+            speed: 1000,
+            randomStart: true,
+            controls: false
+        });
+    });
+</script>
+<header>
+</header>
+<section id="header">
+    <a name="top"></a>
+    <nav>
+        <div class="navTriangle2"></div>
+        <div class="navTriangle3"></div>
+        <div class="navTriangle"></div>
+		<ul>
+			<li><a></a>
+				<ul>
+					<li>
+        				<a href="#who">Who we are</a>
+					</li>
+					<li>
+        				<a href="#what">What we do</a>
+					</li>
+					<li>
+        				<a href="#contact">Get in touch</a>
+					</li>
+					<li>
+        				<a href="http://blog.zanthos.com">Blog</a>
+					</li>					
+				</ul>
+				<img class="ddIcon" src="images/dropdown.png">
+			</li>
+		</ul>		
+    </nav>
+    <br class="clear">
+    <br>
+    <br>
+    <header>
+        <div class="center">
+            <img src="images/logo.png" alt="zanthos" class="header">
+        </div>
+    </header>
+    <div class="center">
+        <ul class="bxslider">
+            <li>Application ecosystem Monitoring.</li>
+            <li>DevOps & Configuration Management</li>
+            <li>Low cost and scalable Cloud solutions.</li>
+            <li>Exceptional Software Development<br><br><br></li>
+        </ul>
+    </div>
+    <footer>
+    </footer>
+    <br class="clear">
+    <br>
+    <br>
+</section>
+<section id="whatwedo">
+    <center>
+        <div class="headerfooter">
+        </div>
+    </center>
+    <header><a name="what">What We Do</a></header>
+    <div class="center">
+        <article class="center">
+            <strong>DevOps & Config Management</strong><br class="clear">
+            <img src="images/whatwedo2.png" alt="" class="header"><br>
+            We provide expert consulting in DevOps and configuration management. We are well versed in many
+            orchestration tools, including Puppet, Chef and Ansible. We've converted
+            our passion for writing code by treating infrastructure as code and provide elegant solutions to our
+            clients, helping reduce cost.
+        </article>
+        <article class="center">
+            <strong>Cloud Computing</strong><br>
+            <img src="images/whatwedo3.png" alt="" class="header"><br class="clear">
+            Cloud computing is one of the the most complex changes to computing. The importance of
+            cloud computing and it's uniqueness distinguish the scalability of an application. We help clients establish
+            a "cloud" environment that is secure, stable, and cost effective.
+        </article>
+        <article class="center">
+            <strong>Monitoring</strong><br>
+            <img src="images/whatwedo4.png" alt="" class="header"><br class="clear">
+            We help clients provide near 100% uptime of their solutions to end-users. We do this by integrating industry
+            standard and custom monitoring solutions to help diagnose problems before and while they exist. Catering to
+            the needs of our clients, we use standard industry tools (riemann, nagios, New Relic, Boundary, etc) to
+            provide monitoring of your entire infrastructure.
+        </article>
+        <br class="clear">
+    </div>
+    <footer>
+    </footer>
+    <br class="clear">
+    <br>
+    <br>
+</section>
+
+<section id="whoweare">
+    <center>
+        <div class="whatwedofooter">
+        </div>
+    </center>
+    <header><a name="who">Who We Are</a></header>
+    <div class="center body">
+        zanthos Inc. is a small company based in Boston, Massachusetts with affiliations in Los Angeles, California. Our
+        team has a powerful and unique background of Software Developers who have a passion for solving complex
+        problems. We pride ourselves in not being a typical consulting firm; we guarantee individualized services to all
+        of our clientele. Our team of experts work to design, configure, and implement the software that is the perfect
+        fit for you. We strive for excellence each step of the way and incorporate your input into every step of our
+        process. In the end, our goal is to provide unique, valuable experiences for each and every client.
+    </div>
+    <footer></footer>
+    <br class="clear">
+    <br>
+    <br>
+</section>
+
+<section id="contact">
+
+    <header><a name="contact">Contact Us</a>
+    </header>
+    <br>
+
+    <div class="center">
+        A Boston, Massachusetts company.
+    </div>
+    <br>
+    <article>
+        <strong>zanthos Inc</strong><br>
+        61 Chapel Road,<br>
+        Newton, MA 02458
+    </article>
+    <article class="middle">
+        Tel. <strong>+1-(844)-ZANTHOS</strong><br>
+        Fax. <strong>+1-(844)-ZANTHOS</strong><br>
+        Email. <strong>contact@zanthos.com</strong>
+    </article>
+    <article>
+        <strong>Facebook</strong> facebook/zanthosinc<br>
+        <strong>Twitter</strong> @zanthosinc<br>
+        <strong>RSS</strong> @resszanthosinc
+    </article>
+    <footer></footer>
+    <br class="clear">
+    <br>
+    <br>
+</section>
+<section id="map">
+    <header></header>
+    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps?t=m&amp;q=61+Chapel+Road,+Newton,+MA+02458&amp;ie=UTF8&amp;hq=&amp;hnear=61+Chapel+St,+Newton,+Massachusetts+02458&amp;z=14&amp;ll=42.363059,-71.20145&amp;output=embed"></iframe>
+    <footer></footer>
+</section>
+<footer class="footer">
+    <div class="legal">
+        &copy; 2013 <span>zanthos Inc.</span> All Rights Reserved
+    </div>
+    <div class="right">
+        <button type="button" class="large" onclick="linkClick('top')">^</button>
+    </div>
+    <div class="socialMedia">
+        <button type="button" class="small" onclick="linkClick('facebook')">
+            <img alt="Facebook" src="images/facebook.png"></img>
+        </button>
+        <button type="button" class="small" onclick="linkClick('twitter')">
+            <img alt="Twitter" src="images/twitter.png"></img>
+        </button>
+        <button type="button" class="small" onclick="linkClick('github')">
+            <img alt="Git-hub" src="images/github.png"></img>
+        </button>
+    </div>
+
+</footer>
+</body>
+</html>
