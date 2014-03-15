@@ -88,6 +88,31 @@ button[type=button].large:hover {
 	cursor: pointer;
 }
 
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	button[type=button].large {
+		color: white;
+		background-color: #4A4A4A;
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+		border: none;
+		font-family: tahoma;
+		font-size: 15pt;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	button[type=button].large {
+		color: white;
+		background-color: #4A4A4A;
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
+		border: none;
+		font-family: tahoma;
+		font-size: 15pt;
+	}
+}
 
 /**
  * Footer
@@ -124,6 +149,56 @@ footer.footer .right{
 	margin-right: 50px;
 	float:right;
 	vertical-align: middle;
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width: 568px) {
+	footer.footer {
+		height: 100px;
+	}
+	
+	footer.footer .legal {
+		margin-top: 30px;
+		font-size: 20pt;
+		float: left;
+		margin-left: 2%;
+
+	}
+	
+	footer.footer .socialMedia{
+		display: none;
+	}
+	
+	footer.footer .right{
+		margin-top: 8px;
+		margin-right: 10px;
+		float:right;
+		vertical-align: middle;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	footer.footer {
+		height: 100px;
+	}
+	
+	footer.footer .legal {
+		margin-top: 30px;
+		font-size: 20pt;
+		float: left;
+		margin-left: 2%;
+
+	}
+	
+	footer.footer .socialMedia{
+		display: none;
+	}
+	
+	footer.footer .right{
+		margin-top: 8px;
+		margin-right: 10px;
+		float:right;
+		vertical-align: middle;
+	}
 }
 
 /**
