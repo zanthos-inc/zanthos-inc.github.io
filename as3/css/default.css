@@ -570,6 +570,7 @@ nav a:hover {
 	margin-left: 5%;
 	padding-top:20px;
 	width: 40%;
+	color:#BABABA;
 }
 
 @media only screen and (max-width: 643px) {
@@ -594,7 +595,7 @@ nav a:hover {
 		float: left;
 		margin-left: 5%;
 		padding-top:20px;
-		width: 100%;
+		width: 90%;
 		font-size: 30px;
 	}
 }
@@ -620,7 +621,7 @@ nav a:hover {
 		float: left;
 		margin-left: 5%;
 		padding-top:20px;
-		width: 100%;
+		width: 90%;
 		font-size: 30px;
 	}
 }
