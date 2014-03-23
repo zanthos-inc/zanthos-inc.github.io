@@ -565,6 +565,13 @@ nav a:hover {
 	color:#BABABA;
 }
 
+#whoweare article {
+	float: left;
+	margin-left: 5%;
+	padding-top:20px;
+	width: 40%;
+}
+
 @media only screen and (max-width: 643px) {
 
 	#whoweare header {
@@ -580,6 +587,14 @@ nav a:hover {
 	}
 	
 	#whoweare .body {
+		font-size: 30px;
+	}
+	
+	#whoweare article {
+		float: left;
+		margin-left: 5%;
+		padding-top:20px;
+		width: 100%;
 		font-size: 30px;
 	}
 }
@@ -598,6 +613,14 @@ nav a:hover {
 	}
 	
 	#whoweare .body {
+		font-size: 30px;
+	}
+	
+	#whoweare article {
+		float: left;
+		margin-left: 5%;
+		padding-top:20px;
+		width: 100%;
 		font-size: 30px;
 	}
 }
