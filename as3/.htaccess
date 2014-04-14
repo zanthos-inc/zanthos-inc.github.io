@@ -1,5 +1,0 @@
-AuthUserFile /srv/www/zanthos.com/public_html/as3/.htpasswd
-AuthName "Please Log In"
-AuthType Basic
-
-require valid-user
