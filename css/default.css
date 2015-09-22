@@ -573,6 +573,11 @@ nav a:hover {
 	color:#BABABA;
 }
 
+img.headshot {
+    width: 150px;
+    height: auto;
+}
+
 @media only screen and (max-width: 643px) {
 
 	#whoweare header {
