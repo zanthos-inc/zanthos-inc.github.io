@@ -123,6 +123,8 @@ footer.footer {
 	height: 60px;
 	background-color: #575757;
 	color: white;
+    position: relative;
+    top: 300px;
 }
 
 footer.footer span {
@@ -208,7 +210,9 @@ footer.footer .right{
  * ----------------------------------------------------------------------------*/
 #header {
 	background-color: #1284c8;
-
+    position: fixed;
+    width: 85%;
+    z-index: 10;
 }
 
 nav {
@@ -371,6 +375,10 @@ nav a:hover {
 	}
 }
 @media only screen and (max-width: 643px) {
+    #header {
+        width: 100%;
+    }
+    
 	nav {
 		background-color: #70ab42;
 		color: white;
@@ -476,6 +484,8 @@ nav a:hover {
 #whatwedo {
 	background-color: white;
 	text-aligh:center;
+    position: relative;
+    top: 300px;
 }
 
 #whatwedo div.center {
@@ -546,6 +556,8 @@ nav a:hover {
 *------------------------*/
 #whoweare {
 	background-color: #F6F6F6;
+    position: relative;
+    top: 300px;
 }
 
 #whoweare header {
@@ -639,6 +651,8 @@ img.headshot {
 #contact {
 	background-color: #70ab42;
 	color: white;
+    position: relative;
+    top: 300px;
 }
 
 #contact header {
