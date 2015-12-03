@@ -29,6 +29,7 @@
     	</script>
     </head>
     <body>
+        <a id="home"></a>
         <div class="container">
               <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">
@@ -39,15 +40,17 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <img class="nav-icon" alt="" src="images/logo.png">
+                    <a href="#home">
+                        <img class="nav-icon" alt="" src="images/logo.png">
+                    </a>
                   </div>
                   <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                      <li class="active"><a href="./">HOME <span class="sr-only">(current)</span></a></li>
-                      <li><a href="../navbar-static-top/">PEOPLE</a></li>
-                      <li><a href="../navbar-static-top/">WHAT WE DO</a></li>
-                      <li><a href="../navbar-static-top/">BLOG</a></li>
-                      <li><a href="../navbar-fixed-top/">CONTACT</a></li>
+                    <ul class="nav navbar-nav navbar-right main-navigation">
+                      <li><a href="#home">HOME</a></li>
+                      <li><a href="#people">PEOPLE</a></li>
+                      <li><a href="#whatwedo">WHAT WE DO</a></li>
+                      <li><a href="#">BLOG</a></li>
+                      <li><a href="#contact">CONTACT</a></li>
                     </ul>
                   </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
@@ -61,7 +64,7 @@
             </div>
             <button type="button">Learn more</button>
         </div>
-        
+        <a id="people"></a>
         <div class="container people">
             <div class="header">
                 <img alt="" src="images/user_male_circle_filled.png">
@@ -93,7 +96,7 @@
             </div>
             <br class="clear">
         </div>
-
+        <a id="whatwedo"></a>
         <div class="container whatwedo">
             <div class="header">
                 <img alt="" src="images/ok.png">
@@ -140,12 +143,61 @@
             </div>
             <br class="clear">
         </div>
-
-
-        <section id="contact">
-        </section>
-
-        <footer class="footer">
-        </footer>
+        <a id="contact"></a>
+        <div class="container contact">
+            <div class="header">
+                <span>
+                <div class="msg_container">
+                    <div class="message" >
+                        <img alt="" src="images/message1.png">
+                    </div>
+                    Contact Us
+                </div>
+                <span>
+                <div class=subhead>
+                    Looking for help? Let us know below.<br>We enjoy difficul questions and will reploy promply!
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="container col-sm-6">
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <input id="name" class="input" name="name" type="text" value="" placeholder="Name" /><br />
+                    <input id="email" class="input" name="email" type="text" value="" placeholder="Email address" /><br />
+                    <textarea id="message" class="input" name="message" rows="7" placeholder="Please describe your needs"></textarea><br />
+                    <input id="submit_button" type="submit" value="Learn more" />
+                </form>               
+            </div>
+            <div class="container col-sm-6 form">
+                <div class=subhead>
+                    <strong>zanthos Inc.</strong>
+                </div>
+                <br>
+                61 Chapel Road Newton, MA 02458<br>
+                <br>
+                <span><strong>Tel:</strong>+1-(844)-ZANTHOS</span><br>
+                <span><strong>Fax:</strong>+1-(844)-ZANTHOS</span><br>
+                <span><strong>Email:</strong>contact@zanthos.com</span><br>
+                <br>
+                <span><strong>Facebook:</strong>facebook/zanthosinc</span><br>
+                <span><strong>Twtter:</strong>@zanthosinc</span><br>
+            </div>
+        </div>
+        <div class="container footer">
+            &copy;2014 zanthos Inc. All Rights Reserved<br>
+            <br>
+            <a href="http://www.facebook.com" target="__blank">
+                <img alt="Facebook" src="images/facebook_filled1.png" />
+            </a>
+            <a href="http://twitter.com/zanthosinc" target="__blank">
+                <img alt="Twitter" src="images/twitter_filled.png" />
+            </a>
+            <a href="http://www.github.com/zanthos-inc" target="__blank">
+                <img alt="Github" src="images/github_filled.png" />
+            </a>
+        </div>
+        <script src="js/jquery.nav.js"></script>
+        <script src="js/custom.js"></script>
     </body>
 </html>

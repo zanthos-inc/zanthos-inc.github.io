@@ -41,7 +41,8 @@ ul.nav li.active a {
     background-color: white !important;
     background-image: none !important;
 }
-/* End Navigation
+
+/* End Navigation /*
 
 /* Welcome */
 div.welcome {
@@ -173,3 +174,76 @@ div.img_head img.cloud {
     left: 1px;
 }
 /* End What We Do */
+
+/* Contact */
+
+div.contact {
+    background-color: #70ab41;
+    color: white;
+    position: center;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../images/contact_bg.png');
+    background-repeat: no-repeat;
+}
+
+div.contact div.header {
+    font-size: 30pt;
+}
+
+div.contact div.subhead {
+    margin-top: 10px;
+    font-size: 12pt;
+}
+
+div.contact div.p_head {
+    margin-top: 10px;
+    font-size: 16pt;
+}
+
+div.contact form input,
+div.contact form textarea {
+    color: block;
+    width:400px;
+}
+
+div.contact form input[type=submit] {
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 5px 0;
+}
+
+div.msg_container {
+   margin: 0 auto;
+   width: 280px;
+}
+div.contact div.message {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+div.contact div.message img {
+    position: relative;
+    top: -9px;
+}
+/* End Contact */
+
+/* Footer */
+div.footer {
+    text-align: center;
+    background-color: #2c2c2c;
+    color: #8b8b8b;
+    padding: 40px 0px;
+}
+
+div.footer img {
+    margin: 0 5px;
+}
+
+/* End Footer */
