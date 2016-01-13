@@ -29,11 +29,19 @@ ul.nav a {
     color: #007bc3 !important;
 }
 
+/* Add underline for mobile devices */
+@media screen and (max-width: 736px) {
+    ul.nav a {
+        border-bottom: 1px solid #007bc3;
+    }
+}
+
+
 ul.nav li.active a {
-    border-bottom: 2px solid #007bc3;
+    border-bottom: 3px solid #007bc3;
 }
 ul.nav li a:hover {
-    border-bottom: 2px solid #007bc3;
+    border-bottom: 3px solid #007bc3;
 }
 
 ul.nav li.active, 
