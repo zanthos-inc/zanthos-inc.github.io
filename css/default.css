@@ -163,15 +163,25 @@ div.img_head img.cloud {
     height: auto;
 }
 
-.expertise-tags {
-    line-height: 2.2;
-    padding: 0 2rem;
+.service-list {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.75rem;
 }
 
-.expertise-tags .badge {
-    margin: 0.2rem;
-    font-size: 0.8rem;
-    font-weight: 500;
+.service-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.service-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #007bc3;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 575px) {
