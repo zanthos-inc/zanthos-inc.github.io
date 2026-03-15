@@ -1,110 +1,91 @@
-.clear {
-    clear: both;
+html {
+    scroll-behavior: smooth;
 }
 
-div.container {
-    padding: 0 0 30px 0;
-}
-
-button {
-    background-color: #007bc3;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 40px;
-}
-
-/* Navigation bootstrap overrides*/
+/* Navigation */
 img.nav-icon {
     margin: 10px 0;
 }
-.navbar-default {
-    box-shadow: none !important;
-    background-color: white !important;
-    border: none !important;
-    background-image: none !important;
+
+.navbar {
+    box-shadow: none;
+    background-color: white;
+    border: none;
 }
 
-ul.nav a {
+.nav-link {
     color: #007bc3 !important;
+    font-weight: 500;
 }
 
-/* Add underline for mobile devices */
-@media screen and (max-width: 736px) {
-    ul.nav a {
+.nav-item.active .nav-link,
+.nav-link:hover {
+    border-bottom: 3px solid #007bc3;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-link {
         border-bottom: 1px solid #007bc3;
     }
 }
-
-
-ul.nav li.active a {
-    border-bottom: 3px solid #007bc3;
-}
-ul.nav li a:hover {
-    border-bottom: 3px solid #007bc3;
-}
-
-ul.nav li.active, 
-ul.nav li.active a {
-    background-color: white !important;
-    background-image: none !important;
-}
-
-/* End Navigation /*
+/* End Navigation */
 
 /* Welcome */
 div.welcome {
-    margin-top: 200px;
-    margin-bottom: 200px;
-    position: center;
+    margin-top: 12.5rem;
+    margin-bottom: 12.5rem;
     text-align: center;
 }
 
 div.welcome_text {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 35pt;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 2.5rem;
     color: #007bc3;
 }
 
-/* End Welcome */
+.btn-learn-more {
+    background-color: #007bc3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.625rem 2.5rem;
+}
 
+.btn-learn-more:hover {
+    background-color: #005f99;
+    color: white;
+}
+/* End Welcome */
 
 /* People */
 div.people {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background-color: #007bc3;
     color: white;
-    position: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 1.875rem;
 }
 
 div.people div.header {
-    font-size: 30pt;
+    font-size: 2rem;
 }
 
 div.people div.subhead {
-    margin-top: 10px;
-    font-size: 12pt;
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
 }
 
 div.people div.p_head {
-    margin-top: 10px;
-    font-size: 16pt;
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
 }
 
 div.people div.p_body {
-    margin-top: 8px;
-    font-size: 10pt;
-    padding: 0 80px;
-}
-
-div.people img.left {
-    float: left;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0 5rem;
 }
 
 div.p1 {
@@ -118,38 +99,42 @@ div.p2 {
     background-repeat: no-repeat;
     background-position: 100px -150px;
 }
-/* End People
+
+@media screen and (max-width: 575px) {
+    div.people div.p_body {
+        padding: 0 1rem;
+    }
+}
+/* End People */
 
 /* What We Do */
-
 div.whatwedo {
     background-color: white;
-    position: center;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 1.875rem;
 }
 
 div.whatwedo div.header {
-    font-size: 30pt;
+    font-size: 2rem;
 }
 
 div.whatwedo div.subhead {
-    color: ;
-    margin-top: 10px;
-    font-size: 12pt;
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
 }
 
 div.whatwedo div.p_head {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-weight: bold;
     color: #007bc3;
-    font-size: 16pt;
+    font-size: 1.125rem;
 }
 
 div.whatwedo div.p_body {
-    margin-top: 8px;
-    font-size: 10pt;
-    padding: 0 60px;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    padding: 0 3.75rem;
 }
 
 div.img_head {
@@ -157,84 +142,79 @@ div.img_head {
     margin: 0 auto;
     width: 50px;
     height: 50px;
-    border-radius: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div.img_head img.flag {
     width: 20px;
     height: auto;
-    position: relative;
-    top: 12px;
-    left: 4px;
 }
 
 div.img_head img.code {
     width: 30px;
     height: auto;
-    position: relative;
-    top: 10px;
 }
 
 div.img_head img.cloud {
     width: 30px;
     height: auto;
-    position: relative;
-    top: 12px;
-    left: 1px;
+}
+
+.expertise-tags {
+    line-height: 2.2;
+    padding: 0 2rem;
+}
+
+.expertise-tags .badge {
+    margin: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 575px) {
+    div.whatwedo div.p_body {
+        padding: 0 1rem;
+    }
 }
 /* End What We Do */
 
 /* Contact */
-
 div.contact {
     background-color: #70ab41;
     color: white;
-    position: center;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     background-image: url('../images/contact_bg.png');
     background-repeat: no-repeat;
 }
 
 div.contact div.header {
-    font-size: 30pt;
+    font-size: 2rem;
 }
 
 div.contact div.subhead {
-    margin-top: 10px;
-    font-size: 12pt;
-}
-
-div.contact div.p_head {
-    margin-top: 10px;
-    font-size: 16pt;
-}
-
-div.contact form input,
-div.contact form textarea {
-    color: block;
-    width:100%;
-}
-
-div.contact form input[type=submit] {
-    border: 2px solid white;
-    color: white;
-    background-color: transparent;
-    border-radius: 20px;
-    padding: 5px 0;
+    margin-top: 0.625rem;
+    font-size: 0.875rem;
 }
 
 div.msg_container {
-   margin: 0 auto;
-   width: 280px;
+    margin: 0 auto;
+    width: 280px;
 }
+
 div.contact div.message {
     border: 2px solid white;
-    border-radius: 30px;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 div.contact div.message img {
@@ -248,11 +228,6 @@ div.footer {
     text-align: center;
     background-color: #2c2c2c;
     color: #8b8b8b;
-    padding: 40px 0px;
+    padding: 2.5rem 0;
 }
-
-div.footer img {
-    margin: 0 5px;
-}
-
 /* End Footer */
