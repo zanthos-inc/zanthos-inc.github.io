@@ -4,165 +4,253 @@
         <meta charset="utf-8">
         <title>zanthos Inc. | AI Consulting, RAG Pipelines, LLM Integration</title>
         <meta name="description" content="zanthos Inc. - Expert AI consulting specializing in RAG pipelines, LLM integration, AI chatbots, inference systems, and enterprise AI solutions. Anthropic, OpenAI, xAI API integration experts.">
-        <meta name="keywords" content="AI consulting, RAG, retrieval-augmented generation, LLM, large language models, AI chatbots, Anthropic API, Claude, OpenAI API, GPT, xAI, Grok, OpenClaw, inference pipelines, vector search, embeddings, AI agents, AI infrastructure, enterprise AI, data integration, natural language processing, NLP, generative AI, prompt engineering, AI strategy, machine learning consulting, Boston AI consulting, conversational AI, knowledge base AI, document AI, AI automation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="https://zanthos.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://zanthos.com/">
+        <meta property="og:title" content="zanthos Inc. | AI Consulting, RAG Pipelines, LLM Integration">
+        <meta property="og:description" content="Boutique AI consulting in Boston. We build customer support AI, document and workflow automation, RAG knowledge systems, and data analytics — from first idea to production.">
+        <meta property="og:image" content="https://zanthos.com/images/logo_big.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="zanthos Inc. | AI Consulting">
+        <meta name="twitter:description" content="Boutique AI consulting in Boston. Customer support AI, workflow automation, RAG knowledge systems, and data analytics.">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "zanthos Inc.",
+            "url": "https://zanthos.com/",
+            "email": "contact@zanthos.com",
+            "description": "Boutique AI consulting company in Boston, Massachusetts. We build production AI systems for businesses: customer support AI, document and workflow automation, retrieval-augmented generation (RAG) knowledge systems, and AI data analytics.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Boston",
+                "addressRegion": "MA",
+                "addressCountry": "US"
+            },
+            "areaServed": ["Boston", "Massachusetts", "United States"],
+            "knowsAbout": [
+                "AI consulting",
+                "retrieval-augmented generation",
+                "LLM integration",
+                "AI chatbots",
+                "customer support automation",
+                "document processing automation",
+                "AI data analytics",
+                "vector search",
+                "AI infrastructure"
+            ],
+            "founder": [
+                {
+                    "@type": "Person",
+                    "name": "Jorge Oliveira",
+                    "jobTitle": "Co-Founder",
+                    "alumniOf": "Northeastern University",
+                    "knowsAbout": ["systems design", "enterprise software architecture", "AI solution architecture"]
+                },
+                {
+                    "@type": "Person",
+                    "name": "Bhuwan Chawla",
+                    "jobTitle": "Co-Founder",
+                    "alumniOf": "Northeastern University",
+                    "knowsAbout": ["RAG pipelines", "inference systems", "LLM integration", "AI engineering"]
+                }
+            ]
+        }
+        </script>
         <link rel="shortcut icon" href="images/favicon.ico">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/default.css">
     </head>
     <body>
-        <a id="home"></a>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#home">
-                        <img class="nav-icon" alt="zanthos" src="images/logo.png">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ms-auto main-navigation">
-                            <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#people">PEOPLE</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#whatwedo">WHAT WE DO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        <!-- TODO: create a Google Calendar appointment schedule (Google Calendar -> Create -> Appointment schedule),
+             copy its booking-page link, and search-replace REPLACE_WITH_YOUR_SCHEDULE_ID across the site. -->
+        <header class="site-head">
+            <div class="wrap">
+                <a class="brand" href="/"><img src="images/logo.png" alt="zanthos" width="118" height="27"></a>
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <nav id="nav" class="site-nav">
+                    <a href="#services">Services</a>
+                    <a href="#people">People</a>
+                    <a href="#contact">Contact</a>
+                    <a class="btn-cta" href="https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_SCHEDULE_ID" target="_blank" rel="noopener">Book a consult</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="wrap hero-grid">
+                    <div>
+                        <span class="marker" aria-hidden="true"></span>
+                        <h1>AI that <em>works</em> in your business — built by two engineers who show their sources.</h1>
+                        <p class="lede">
+                            Your documents are scattered, your systems don't talk to each other, and nobody on your
+                            team has time to make AI work. We build production AI that does — customer support
+                            automation, document workflows, and accurate answers from your own data.
+                        </p>
+                        <div class="actions">
+                            <a class="btn-cta" href="https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_SCHEDULE_ID" target="_blank" rel="noopener">Book a free 30-minute consult</a>
+                            <a class="btn-ghost" href="#services">See what we build</a>
+                        </div>
+                        <p class="hero-anchor">Boston, Massachusetts &middot; est. by two senior engineers &middot; contact@zanthos.com</p>
+                    </div>
+                    <div class="hero-mark" aria-hidden="true">
+                        <i class="b2"></i><i class="b1"></i><i class="g1"></i><i class="g2"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tinted" id="why">
+                <div class="wrap">
+                    <p class="eyebrow">Why companies call us</p>
+                    <h2>Small businesses are piloting AI right now — most stall on the same three problems.</h2>
+                    <p class="sub">Messy data, systems that don't integrate, and no time to learn a new field. That's the work we take off your plate. The demand is measurable:</p>
+                    <div class="stat-row">
+                        <div class="stat-card">
+                            <span class="num">40%</span>
+                            <p>of small businesses already run active AI pilots in customer service — the highest of any business function.</p>
+                            <span class="cite">Upwork Research Institute, State of AI in SMBs, 2026</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="num">47%</span>
+                            <p>name data quality as a top barrier to AI deployment — and another 47% name integration complexity.</p>
+                            <span class="cite">Techaisle, 2025 SMB &amp; Midmarket AI Adoption Trends (n=2,100)</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="num">41%</span>
+                            <p>are piloting AI for decision support — the single most-piloted AI use case among small businesses.</p>
+                            <span class="cite">Upwork Research Institute, State of AI in SMBs, 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="services">
+                <div class="wrap">
+                    <p class="eyebrow">What we do</p>
+                    <h2>Four ways we put AI to work.</h2>
+                    <p class="sub">Each built on your data, integrated with your systems, and run by your team.</p>
+                    <div class="card-grid">
+                        <a class="svc-card" href="services/ai-customer-support.html">
+                            <span class="marker" aria-hidden="true"></span>
+                            <h3>AI Customer Support</h3>
+                            <p>Support chatbots grounded in your own help docs, email triage, and human handoff — integrated with the helpdesk you already use.</p>
+                            <span class="go">Learn more &rarr;</span>
+                        </a>
+                        <a class="svc-card" href="services/document-workflow-automation.html">
+                            <span class="marker" aria-hidden="true"></span>
+                            <h3>Document &amp; Workflow Automation</h3>
+                            <p>Extract data from PDFs, invoices, and contracts, route it into your systems, and keep a human in the loop for anything uncertain.</p>
+                            <span class="go">Learn more &rarr;</span>
+                        </a>
+                        <a class="svc-card" href="services/ai-data-analytics.html">
+                            <span class="marker" aria-hidden="true"></span>
+                            <h3>AI Data Analytics</h3>
+                            <p>Ask your database questions in plain English and get accurate, verifiable answers — no waiting on an analyst to build a chart.</p>
+                            <span class="go">Learn more &rarr;</span>
+                        </a>
+                        <a class="svc-card" href="services/rag-knowledge-systems.html">
+                            <span class="marker" aria-hidden="true"></span>
+                            <h3>RAG &amp; Knowledge Systems</h3>
+                            <p>Years of documents, policies, and institutional knowledge, instantly searchable — with every answer cited to its source.</p>
+                            <span class="go">Learn more &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section tinted" id="people">
+                <div class="wrap">
+                    <p class="eyebrow">People</p>
+                    <h2>A two-person firm, on purpose.</h2>
+                    <p class="sub">zanthos Inc. is a boutique AI consulting company based in Boston, Massachusetts, with affiliates in Los Angeles, California. When you hire us, the engineers on this page do the work.</p>
+                    <div class="people-grid">
+                        <div class="person">
+                            <img src="images/jorge.png" alt="Jorge Oliveira">
+                            <h3>Jorge Oliveira</h3>
+                            <p class="role">Co-Founder &middot; Systems &amp; Architecture</p>
+                            <p>A native of New York and a graduate of Northeastern University in Boston, Jorge brings deep experience in systems design, problem solving, and enterprise software architecture. He now focuses on architecting AI solutions that integrate with complex business environments, from data ingestion pipelines to production inference systems. His background includes enterprise-scale deployments at Los Angeles Airport (LAX) and mission-critical systems for Raytheon — experience that informs how he builds reliable, scalable AI systems.</p>
+                        </div>
+                        <div class="person">
+                            <img src="images/bhuwan.png" alt="Bhuwan Chawla">
+                            <h3>Bhuwan Chawla</h3>
+                            <p class="role">Co-Founder &middot; AI Engineering</p>
+                            <p>Bhuwan brings extensive experience in AI engineering, with deep expertise in building RAG pipelines, inference systems, and LLM integrations using Python, Java, and modern AI frameworks. He received his BS and MS in Computer Engineering from Northeastern University, started his career developing mission-critical Air Traffic Control systems for Raytheon, then played key roles at several ground-floor start-ups. Today he helps organizations turn unstructured data into actionable intelligence through retrieval-augmented generation and custom inference pipelines.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="band-dark" id="contact">
+                <div class="wrap contact-cols">
+                    <div class="contact-side">
+                        <span class="marker" aria-hidden="true"></span>
+                        <h2>Tell us what you're trying to automate.</h2>
+                        <p class="sub">Grab time directly on our calendar, or send a note — we enjoy difficult questions and reply promptly.</p>
+                        <a class="btn-cta" href="https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_SCHEDULE_ID" target="_blank" rel="noopener">Book a free 30-minute consult</a>
+                        <p class="hero-anchor">zanthos Inc. &middot; Boston, Massachusetts<br>contact@zanthos.com</p>
+                    </div>
+                    <!-- Fully static contact form: submitting opens the visitor's email app with a
+                         pre-filled message to contact@zanthos.com (see js/site.js). No backend needed. -->
+                    <form class="contact-form" id="contact-form">
+                        <div class="row2">
+                            <div class="field">
+                                <label for="cf-name">Name</label>
+                                <input type="text" id="cf-name" name="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="cf-email">Work email</label>
+                                <input type="email" id="cf-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="cf-message">What are you trying to build or automate?</label>
+                            <textarea id="cf-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button class="btn-cta" type="submit">Send message</button>
+                        <p class="form-note">Sending opens your email app with the message pre-filled &mdash; it goes straight to contact@zanthos.com.</p>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-foot">
+            <div class="wrap">
+                <div class="foot-grid">
+                    <div>
+                        <div class="foot-brand">
+                            <img src="images/logo_big.png" alt="">
+                            <span>zanthos</span>
+                        </div>
+                        <p>Boutique AI consulting. Production systems, grounded answers, and a human in the loop — built in Boston.</p>
+                    </div>
+                    <div>
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services/ai-customer-support.html">AI Customer Support</a></li>
+                            <li><a href="services/document-workflow-automation.html">Document &amp; Workflow Automation</a></li>
+                            <li><a href="services/ai-data-analytics.html">AI Data Analytics</a></li>
+                            <li><a href="services/rag-knowledge-systems.html">RAG &amp; Knowledge Systems</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:contact@zanthos.com">contact@zanthos.com</a></li>
+                            <li><a href="https://calendar.google.com/calendar/appointments/schedules/REPLACE_WITH_YOUR_SCHEDULE_ID" target="_blank" rel="noopener">Book a consult</a></li>
+                            <li>Boston, Massachusetts</li>
                         </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
-        <!-- Welcome -->
-        <div class="container welcome">
-            <img alt="zanthos logo" src="images/logo_big.png">
-            <div class="welcome_text">
-                Your Expert Customized<br>Consulting in AI
+                <div class="foot-legal">&copy;2026 zanthos Inc. All rights reserved.</div>
             </div>
-            <a href="#whatwedo" class="btn btn-primary btn-learn-more">Learn more</a>
-        </div>
-        <a id="people"></a>
-        <div class="container-fluid people">
-            <div class="header">
-                <img alt="" src="images/user_male_circle_filled.png">
-                People
-                <div class="subhead">
-                    zanthos Inc. is a boutique AI consulting company based in Boston,<br> Massachusetts, with affiliates in Los Angeles, California. Our team:
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-sm-6 p1">
-                    <img alt="Jorge Oliveira" src="images/jorge.png">
-                    <br>
-                    <div class="p_head">Jorge Oliveira</div>
-                    <br>
-                    <div class="p_body">
-                    A native of New York and a graduate of Northeastern University, in Boston, Massachusetts, Jorge brings deep experience in systems design, problem solving, and enterprise software architecture. He now focuses on architecting AI solutions that integrate with complex business environments, from data ingestion pipelines to production inference systems. Jorge has worked with several high-profile companies and projects, including enterprise-scale deployments at Los Angeles Airport (LAX) and mission-critical systems for Raytheon, experience that informs his approach to building reliable, scalable AI systems.
-                    </div>
-                </div>
-                <div class="col-sm-6 p2">
-                    <img alt="Bhuwan Chawla" src="images/bhuwan.png">
-                    <br>
-                    <div class="p_head">Bhuwan Chawla</div>
-                    <br>
-                    <div class="p_body">
-                    Bhuwan brings extensive experience in AI engineering, with deep expertise in building RAG pipelines, inference systems, and LLM integrations using Python, Java, and modern AI frameworks. He received his Bachelors of Science and Masters of Science, in Computer Engineering, from Northeastern University. Bhuwan started his career developing mission-critical Air Traffic Control systems for Raytheon, then played key roles at several ground-floor start-ups. Today, he specializes in helping organizations harness AI to turn unstructured data into actionable intelligence through retrieval-augmented generation and custom inference pipelines.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="whatwedo"></a>
-        <div class="container-fluid whatwedo">
-            <div class="header">
-                <img alt="" src="images/ok.png">
-                What we do
-                <div class="subhead">
-                    We help organizations unlock the power of AI through custom inference,<br> retrieval-augmented generation, and intelligent data integration.
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-sm-4">
-                    <div class="img_head">
-                        <img class="code" alt="" src="images/code1.png">
-                    </div>
-                    <br>
-                    <div class="p_head">AI-Powered Solutions</div>
-                    <br>
-                    <div class="p_body">
-                    We design and deploy production AI systems that solve real business problems. Whether it's automating document review, building intelligent chatbots for customer support, or creating internal tools that let your team query data in plain English — we build AI that your people actually use.
-                    <ul class="service-list">
-                        <li>Custom AI applications using Anthropic Claude, OpenAI, and xAI models</li>
-                        <li>Intelligent chatbots and conversational AI for customers and internal teams</li>
-                        <li>AI strategy workshops to identify your highest-ROI use cases</li>
-                        <li>Proof-of-concept to production in weeks, not months</li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img_head">
-                        <img class="cloud" alt="" src="images/clouds1.png">
-                    </div>
-                    <br>
-                    <div class="p_head">RAG & Knowledge Systems</div>
-                    <br>
-                    <div class="p_body">
-                    Your organization sits on years of valuable documents, policies, reports, and institutional knowledge. We build systems that make all of it instantly searchable and queryable through natural language — so your team gets accurate, sourced answers instead of generic AI responses.
-                    <ul class="service-list">
-                        <li>Retrieval-augmented generation (RAG) over your proprietary documents</li>
-                        <li>Document ingestion pipelines: PDFs, emails, wikis, Slack, SharePoint</li>
-                        <li>Answers grounded in your data with source citations</li>
-                        <li>Reduced hallucination through retrieval-first architecture</li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="img_head">
-                        <img class="flag" alt="" src="images/flag_2.png">
-                    </div>
-                    <br>
-                    <div class="p_head">Data Integration & AI Infrastructure</div>
-                    <br>
-                    <div class="p_body">
-                    AI is only as good as the data behind it. We connect your AI systems to the data sources that matter — databases, APIs, CRMs, ERPs, and document stores — and build the infrastructure to keep it all running reliably at scale.
-                    <ul class="service-list">
-                        <li>Enterprise data connectors for Salesforce, SAP, internal databases, and more</li>
-                        <li>Scalable vector search and embedding infrastructure</li>
-                        <li>Production deployment on AWS, Azure, or your private cloud</li>
-                        <li>Cost monitoring and optimization for inference workloads</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a id="contact"></a>
-        <div class="container-fluid contact">
-            <div class="header">
-                <div class="msg_container">
-                    <div class="message">
-                        <img alt="" src="images/message1.png">
-                    </div>
-                    Contact Us
-                </div>
-                <div class="subhead">
-                    Looking for help? Let us know.<br>We enjoy difficult questions and will reply promptly!
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="text-center">
-                <a href="mailto:contact@zanthos.com" class="btn btn-outline-light btn-lg">contact@zanthos.com</a>
-            </div>
-        </div>
-        <div class="container-fluid footer">
-            &copy;2026 zanthos Inc. All Rights Reserved
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <script src="js/custom.js"></script>
+        </footer>
+
+        <script src="js/site.js"></script>
     </body>
 </html>
